@@ -27,8 +27,6 @@ else{
         sumOfNumbers += i;
     }
 }
-let results = `
-    <p>The first number is - ${firstNumber}</p>
-    <p>The second number is - ${secondNumber}</p>
-    <P>Sum of numbers is - ${sumOfNumbers}</p> `
-document.querySelector( '.results' ).innerHTML = results;
+console.log("The first number is  " + firstNumber);
+console.log("The second number is " + secondNumber);
+console.log(" Sum of numbers is " + sumOfNumbers);
