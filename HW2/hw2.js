@@ -1,20 +1,15 @@
 let firstNumber = +prompt('Enter the first integer number,pls');
 
-while (isNaN(firstNumber)){
-   firstNumber = +prompt('Enter thr first INTEGER NUMBER,pls');
-  } if(firstNumber === ''){
-   firstNumber = +prompt('Enter thr first INTEGER NUMBER,pls');
-  } ;
-
+while (!Number.isInteger(firstNumber) || isNaN(firstNumber) || firstNumber == "") {
+    firstNumber = +prompt('Enter the first INTEGER NUMBER,pls');
+}
                                   
 let secondNumber = +prompt('Enter the srcond integer number,pls');
 
-while (isNaN(secondNumber)){
-   firstNumber = +prompt('Enter the second INTEGER NUMBER,pls');
-  }if(secondNumber === ''){
-   firstNumber = +prompt('Enter the second INTEGER NUMBER,pls');
-  } ;
-
+while(!Number.isInteger(secondNumber) || isNaN(secondNumber) || secondNumber == "" || firstNumber > secondNumber){
+  secondNumber = +prompt('Enter the second INTEGER NUMBER,pls');
+  } 
+  
 
 let question = confirm('Skip even numbers? ( "Cancel" - no; "Ok" - yes)')
 let sumOfNumbers = 0;
@@ -32,5 +27,8 @@ else{
         sumOfNumbers += i;
     }
 }
-
-console.log(sumOfNumbers);
+let results = `
+    <p>The first number is - ${firstNumber}</p>
+    <p>The second number is - ${secondNumber}</p>
+    <P>Sum of numbers is - ${sumOfNumbers}</p> `
+document.querySelector( '.results' ).innerHTML = results;
