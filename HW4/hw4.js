@@ -65,7 +65,7 @@ const randomMark = getRandomMark(students, themes, marks);
 console.log(randomMark);
 
 
-document.writeln(`<p> №1:  ${getPairs()}</p>`);
-document.writeln(`<p> №2:  ${studentsWithThem()}</p>`);
-document.writeln(`<p> №3:  ${marksForStudents()}</p>`);
-document.writeln(`<p> №4:  ${getRandomMark()}</p>`);
+document.bodi.innerHTML(`<p> №1:  ${getPairs()}</p>`);
+document.bodi.innerHTML(`<p> №2:  ${studentsWithThem()}</p>`);
+document.bodi.innerHTML(`<p> №3:  ${marksForStudents()}</p>`);
+document.bodi.innerHTML(`<p> №4:  ${getRandomMark()}</p>`);
