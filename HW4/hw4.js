@@ -3,11 +3,11 @@ const themes = ["Диференційне рівняння", "Теорія ав�
 const marks = [4, 5, 5, 3, 4, 5];
 
 //1
-function getPairs(stud){
+function getPairs(){
     let pairs = []; 
     let boys = [];
     let girls = [];
-    for(student of stud){
+    for(student of students){
         if(student === "Саша" || student === "Ігор" || student === "Олексій"){
             boys.push(student);
         }
