@@ -107,3 +107,12 @@ const students = [{
   };
   
    console.log(calculateWordLetters('test'));
+
+   document.writeln(`<p><b>Функція, яка повертає список предметів для конкретного студента:</b> ${getSubjects(students[0])} </p>`);
+   document.writeln(`<p><b>Функція, яка поверне середню оцінку по усім предметам для переданого студента:</b> ${getAverageMark(students[0])} </p>`);
+   document.writeln(`<p><b>Функція, яка повертає інформацію загального виду по переданому студенту:</b> ${getStudentInfo(students[0])} </p>`);
+   document.writeln(`<p><b>Функція, яка повертає імена студентів у алфавітному порядку:</b> ${getStudentsNames(students)} </p>`);
+   document.writeln(`<p><b>Функція, яка повертає кращого студента зі списку по показнику середньої оцінки:</b> ${getBestStudent(students)} </p>`);
+   document.writeln(`<p><b>Функція, яка повертає обє'кт, в якому ключі це букви у слові:</b> ${calculateWordLetters('test')} </p>`);
+   
+
