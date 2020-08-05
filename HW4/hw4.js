@@ -53,19 +53,10 @@ console.log(final);
 function getRandomMark() {
     const groups = [];
     for (i = 0; i < studentWithTheme.length; i++) {
-        groups.push(studentWithTheme[i] + ' - ' + Math.floor(Math.random(marks) * 5 - 1));
+        groups.push(studentWithTheme[i] + ' - ' +  Math.ceil(Math.random(marks)*5));
     }
 
     return groups;
 }
 
 const randomMark = getRandomMark(students, themes, marks);
-
-
-console.log(randomMark);
-
-
-document.body.innerHTML = `<p> №1:  ${getPairs()}</p>`;
-document.body.innerHTML = `<p> №2:  ${studentsWithThem()}</p>`;
-document.body.innerHTML = `<p> №3:  ${marksForStudents()}</p>`;
-document.body.innerHTML = `<p> №4:  ${getRandomMark()}</p>`;
