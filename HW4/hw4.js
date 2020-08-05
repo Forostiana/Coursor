@@ -60,3 +60,4 @@ function getRandomMark() {
 }
 
 const randomMark = getRandomMark(students, themes, marks);
+console.log(getRandomMark);
