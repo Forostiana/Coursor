@@ -60,6 +60,7 @@ const generateCombinations = (word, value) => {
      
      console.log(generateCombinations('Commander',3));
 
+     
 
    document.writeln(`<p><b>Функція, яка повертає масив випадкових цілих чисел :</b>${getRandomArray(15, 1, 100)} </p>`);
    document.writeln(`<p><b>Функція, яка рахує середнє арифметичне всіх переданих в неї аргументів :</b> ${getAverage(numbers)} </p>`);
