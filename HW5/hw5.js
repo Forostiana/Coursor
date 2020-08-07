@@ -61,8 +61,8 @@ const generateCombinations = (word, value) => {
      console.log(generateCombinations('Commander',3));
 
 
-     document.writeln(`<p><b></b>Функція, яка повертає масив випадкових цілих чисел : ${getRandomArray(15, 1, 100)} </p>`);
-   document.writeln(`<p><b>:</b>Функція,яка рахує середнє арифметичне всіх переданих в неї аргументів : ${getAverage(numbers)} </p>`);
+   document.writeln(`<p><b>Функція, яка повертає масив випадкових цілих чисел :</b>${getRandomArray(15, 1, 100)} </p>`);
+   document.writeln(`<p><b>Функція, яка рахує середнє арифметичне всіх переданих в неї аргументів :</b> ${getAverage(numbers)} </p>`);
    document.writeln(`<p><b>Функція, яка фільтрує парні числа передані як аргументи функції :</b> ${filterEvenNumbers(...numbers)} </p>`);
    document.writeln(`<p><b>Функція, яка порахує кількість чисел більших 0 :</b> ${countPositiveNumbers(1, -2, 3, -4, -5, 6)} </p>`);
    document.writeln(`<p><b>Функція, яка відфільтрує усі елементи в масиві та залишить тільки ті, які діляться на ціло на 5 :</b> ${getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2)} </p>`);
