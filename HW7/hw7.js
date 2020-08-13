@@ -46,7 +46,7 @@ console.log(getMySalary(latvia))
 const timerLv = setInterval(() => console.log(getMySalary(latvia)), 10000);
 
 
-document.writeln(`1.  <p>In Ukraine you'll pay [console.log(getMyTaxes.call(ukraine, 1000))] $ taxes from your salary. </p>`);
+document.writeln(`1.  <p>In Ukraine you'll pay [${myTax}] $ taxes from your salary. </p>`);
 
 
 document.writeln(`2.  <p>The middle tax in your country is [${(getMiddleTaxes.call(ukraine))} $.</p>`);
