@@ -6,14 +6,14 @@ const litva = { tax: 0.15, middleSalary: 1509, vacancies: 1114};
 
 function getMyTaxes(salary) {
   const myTax = this.tax * salary;
-  return  `You'll pay ${myTax} $ taxes from your salary`;
+  return  `${myTax} $`;
 }
 console.log(getMyTaxes.call(ukraine, 1000));
 
 //2
 function getMiddleTaxes(country) {
   const middleTax = this.tax * this.middleSalary;
-  return  `The middle tax in your country is ${middleTax} $`;
+  return  ` ${middleTax} $`;
 }
 console.log(getMiddleTaxes.call(ukraine));
 console.log(getMiddleTaxes.call(latvia));
@@ -22,7 +22,7 @@ console.log(getMiddleTaxes.call(litva));
 //3
 function getTotalTaxes(country) {
   const totalTax = this.tax * this.middleSalary* this.vacancies;
-  return `Total tax in your country is ${totalTax} $`;
+  return `${totalTax} $`;
 }
 console.log(getTotalTaxes.call(ukraine));
 console.log(getTotalTaxes.call(latvia));
@@ -46,15 +46,15 @@ console.log(getMySalary(latvia))
 const timerLv = setInterval(() => console.log(getMySalary(latvia)), 10000);
 
 
-document.writeln(`1.  <p>In Ukraine you'll pay [${(getMyTaxes.call(ukraine, 1000))}] </p>`);
+document.writeln(`1.  <p>In Ukraine you'll pay ${(getMyTaxes.call(ukraine, 1000))} </p>`);
 
 
-document.writeln(`2.  <p>The middle tax in Ukraine is [${(getMiddleTaxes.call(ukraine))} $.</p>`);
-document.writeln(`<p>The middle tax in Litva is [${(getMiddleTaxes.call(litva))} $.</p>`);
-document.writeln(`<p>The middle tax in Latvia is [${(getMiddleTaxes.call(latvia))} $.</p>`);
+document.writeln(`2.  <p>The middle tax in Ukraine is ${(getMiddleTaxes.call(ukraine))}.</p>`);
+document.writeln(`<p>The middle tax in Litva is ${(getMiddleTaxes.call(litva))}.</p>`);
+document.writeln(`<p>The middle tax in Latvia is ${(getMiddleTaxes.call(latvia))}.</p>`);
 
-document.writeln(`3. <p> Total tax in Ukraine is [${(getTotalTaxes.call(ukraine))}] $. </p>`);
-document.writeln(`<p> Total tax in Litva is [${(getTotalTaxes.call(litva))}] $. </p>`);
-document.writeln(`<p> Total tax in Latvia is [${(getTotalTaxes.call(latvia))}] $. </p>`);
+document.writeln(`3. <p> Total tax in Ukraine is ${(getTotalTaxes.call(ukraine))}. </p>`);
+document.writeln(`<p> Total tax in Litva is ${(getTotalTaxes.call(litva))}. </p>`);
+document.writeln(`<p> Total tax in Latvia is ${(getTotalTaxes.call(latvia))}. </p>`);
 
 document.writeln(` 4. <p>Result in console </p>`);
