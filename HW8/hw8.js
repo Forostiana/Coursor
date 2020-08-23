@@ -54,7 +54,8 @@ class Student {
       }
     }
   }
-  
+  const student2 = new BudgetStudent("Inna Forostiana", "KHIF", 1);
+
   
   console.log(student.getInfo());
   console.log(`Student's marks`, student.marks);
@@ -63,3 +64,5 @@ class Student {
   console.log(`Àverage mark`,student.getAverageMark());
   console.log(`Student dismiss`, student.dismiss());
   console.log(`Student recover`, student.recover());
+
+  console.log(student2);
