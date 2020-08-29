@@ -1,5 +1,5 @@
 
-const time = 50;
+const delay = 50;
 
 function getRandomChines(length) {
     return new Promise((resolve) => {
@@ -9,7 +9,7 @@ function getRandomChines(length) {
         sing += i;
         randomChines.push(String.fromCharCode(sing));
       }
-      setTimeout(() => resolve(randomChines.join("")), length * time)
+      setTimeout(() => resolve(randomChines.join("")), length * delay)
     })
   }
   const button =  document.querySelector(".button");
